@@ -10,7 +10,7 @@ jobs:
     - name: Step one
       uses: actions/checkout@v3
     - name: Step two
-      run: echo "The date is: $(date)"
+      run: date
   job2:
     name: Second job
     runs-on: windows-latest
@@ -18,7 +18,7 @@ jobs:
     - name: Step one
       uses: actions/checkout@v3
     - name: step two
-      run: Write-Host "Windows Date is:" Get-Date 
+      run: Get-Date 
   job3:
     name: Third job
     runs-on: macos-latest
@@ -35,4 +35,4 @@ jobs:
     - name: Step one
       uses: actions/checkout@v3
     - name: step two
-      run: echo "The date is: $(date)"
+      run: date
